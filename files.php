@@ -4,6 +4,8 @@
 <?php 
 $directory = scandir (".");
 foreach ($directory as $file) {
+	if (is_dir($file)) {
 	echo $file.'<br>';
+}
 }
 ?>
