@@ -1,7 +1,6 @@
 <?php 
-$file = fopen (__DIR__.'/file.txt','w');
-for ($i = 1; $i <= 100; $i++) {
-	fputs($file,$i.PHP_EOL);
-}
+$file = fopen (__DIR__.'/file.txt','a');
+
+	fputs($file,'abc');
 fclose($file);
 ?>
